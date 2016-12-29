@@ -44,14 +44,10 @@ contentView.stopRefreshing();
 
 #Installation
 
-cocoaPods:
-
-
-
 carthage:
 
 ```swift
 github "StevenDXC/DxWaveRefresh_Swift" ~> 1.0
 ```
-
+![Android vsersion](https://github.com/StevenDXC/DxWaveRefresh) 
 
