@@ -19,7 +19,7 @@ contentView.angle = 10;
 contentView.gravity = .left
 contentView.waveAnimationDuration = 1.6;
 
-//add WaveRefreshView as UIScrollView content view
+//add WaveRefreshView to UIScrollView, and as first child view
 scrollView.addSubview(contentView!)
 ```
 
