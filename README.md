@@ -32,7 +32,7 @@ pulling down:
 start refreshing:
 
 ```swift
-contentView.Refreshing();
+contentView.startRefreshing();
 ```
 
 
