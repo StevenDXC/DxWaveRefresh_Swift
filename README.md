@@ -2,12 +2,12 @@
 
 pull down to refresh with wave animation. by swift 3.0
 
-#demo
+#Demo
 
 
 ![](https://github.com/StevenDXC/DxWaveRefresh_Swift/blob/master/image/waverefresh.gif)
 
-#usage
+#Usage
 
 
 ```swift
@@ -49,5 +49,5 @@ carthage:
 ```swift
 github "StevenDXC/DxWaveRefresh_Swift" ~> 1.0
 ```
-![Android vsersion](https://github.com/StevenDXC/DxWaveRefresh) 
+[Android vsersion](https://github.com/StevenDXC/DxWaveRefresh) 
 
