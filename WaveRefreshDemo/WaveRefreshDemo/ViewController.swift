@@ -45,7 +45,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if(scrollView.contentOffset.y <= 0 && scrollView.contentOffset.y >= -100 && contentView?.isLoading() == false){
+        if(scrollView.contentOffset.y <= 0 && scrollView.contentOffset.y >= -100 && contentView?.isRefreshing() == false){
             let progress = -scrollView.contentOffset.y/100.0;
             contentView?.progress = progress;
         }
@@ -54,7 +54,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         if(scrollView.contentOffset.y <= -100){
             contentView?.progress = 1.0;
-            contentView?.startLoaingAnimation();
+            contentView?.startRefreshing();
             DispatchQueue.main.asyncAfter(wallDeadline: .now()+5, execute: {
                 self.stopRefreshing();
             });
@@ -62,7 +62,7 @@ class ViewController: UIViewController,UIScrollViewDelegate {
     }
     
     func stopRefreshing(){
-        contentView?.stopLoadingAnimation();
+        contentView?.stopRefreshing();
     }
 
 }

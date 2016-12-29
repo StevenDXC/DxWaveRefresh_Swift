@@ -85,12 +85,12 @@ public class WaveRefreshView: UIView,CAAnimationDelegate  {
         bgLayer?.add(animation, forKey: "shape");
     }
     
-    public func isLoading() -> Bool{
+    public func isRefreshing() -> Bool{
         return isLoadingAnimationRuning;
     }
     
     //start play loading animation
-    public func startLoaingAnimation(){
+    public func startRefreshing(){
         
         if(isLoadingAnimationRuning){
             return;
@@ -106,7 +106,7 @@ public class WaveRefreshView: UIView,CAAnimationDelegate  {
     }
     
     //stop play loading animation
-    public func stopLoadingAnimation(){
+    public func stopRefreshing(){
         self.waveView?.removeFromSuperview();
         self.restoreShapeLayerWithAnimation();
     }
