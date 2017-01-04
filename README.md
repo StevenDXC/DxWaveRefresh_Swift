@@ -26,7 +26,7 @@ scrollView.addSubview(contentView!)
 pulling down:
 
 ```swift
- contentView.progress = progress; //pregress = current scrollView.contentOffset.y / the contentOffsetY of trigger refreshing
+ contentView.progress = progress; //progress = current scrollView.contentOffset.y / the contentOffsetY of trigger refreshing
 ```
 
 start refreshing:
